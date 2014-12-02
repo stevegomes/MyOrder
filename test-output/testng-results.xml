@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="157623" started-at="2014-11-29T06:37:20Z" finished-at="2014-11-29T06:39:58Z">
+  <suite name="Default suite" duration-ms="163335" started-at="2014-11-29T12:05:59Z" finished-at="2014-11-29T12:08:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="157623" started-at="2014-11-29T06:37:20Z" finished-at="2014-11-29T06:39:58Z">
-      <class name="com.test.TestCases.Checkout_FoodDrinks">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.test.TestCases.Checkout_FoodDrinks@566776ad]" name="Setup" is-config="true" duration-ms="17324" started-at="2014-11-29T12:07:20Z" finished-at="2014-11-29T12:07:38Z">
+    <test name="Default test" duration-ms="163335" started-at="2014-11-29T12:05:59Z" finished-at="2014-11-29T12:08:43Z">
+      <class name="com.test.TestCases.Checkout_Parking">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.test.TestCases.Checkout_Parking@566776ad]" name="Setup" is-config="true" duration-ms="26224" started-at="2014-11-29T17:35:59Z" finished-at="2014-11-29T17:36:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="checkoutTest()[pri:0, instance:com.test.TestCases.Checkout_FoodDrinks@566776ad]" name="checkoutTest" duration-ms="139231" started-at="2014-11-29T12:07:38Z" finished-at="2014-11-29T12:09:57Z">
+        <test-method status="PASS" signature="checkoutTest()[pri:0, instance:com.test.TestCases.Checkout_Parking@566776ad]" name="checkoutTest" duration-ms="136074" started-at="2014-11-29T17:36:26Z" finished-at="2014-11-29T17:38:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.TestCases.Checkout_FoodDrinks@566776ad]" name="tearDown" is-config="true" duration-ms="1025" started-at="2014-11-29T12:09:57Z" finished-at="2014-11-29T12:09:58Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.TestCases.Checkout_Parking@566776ad]" name="tearDown" is-config="true" duration-ms="993" started-at="2014-11-29T17:38:42Z" finished-at="2014-11-29T17:38:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.test.TestCases.Checkout_FoodDrinks -->
+      </class> <!-- com.test.TestCases.Checkout_Parking -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

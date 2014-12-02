@@ -80,7 +80,7 @@ public class Checkout_FoodDrinks{
 			driver.findElement(By.xpath("//android.widget.TextView[@text='Food & drinks']")).click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("android:id/button1")));
 		driver.findElements(By.id("android:id/button1")).get(0).click();
-		driver.findElements(By.id("com.myorder.app:id/autoComplete")).get(0).sendKeys("milan new");
+		driver.findElements(By.id("com.myorder.app:id/autoComplete")).get(0).sendKeys("Mc");
 		
 //		driver.sendKeyEvent(66);
 		
@@ -95,21 +95,27 @@ public class Checkout_FoodDrinks{
 //		JavascriptExecutor jse = (JavascriptExecutor) driver; jse.executeScript("UIATarget.localTarget().frontMostApp().keyboard().buttons()['Done\'].tap()");
 		driver.tap(1, 710, 1260, 1);
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//android.widget.TextView[@text='Milan New']")).click();
+		driver.findElements(By.id("com.myorder.app:id/merchantName")).get(1).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("com.myorder.app:id/menuTab")));
+		driver.findElements(By.id("com.myorder.app:id/menuTab")).get(0).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//android.widget.TextView[@text='Dranken']")).click();
+		driver.findElement(By.xpath("//android.widget.TextView[@text='Luxe belegde broodjes']")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//android.widget.TextView[@text='7-up']")).click();
+		driver.findElement(By.xpath("//android.widget.TextView[@text='Broodje gehaktbal (koud)']")).click();
 		Thread.sleep(2000);
 		driver.findElements(By.id("com.myorder.app:id/btnOrderMeal")).get(0).click();
 		Thread.sleep(2000);
 		driver.findElements(By.id("com.myorder.app:id/basket_open")).get(0).click();
 		Thread.sleep(2000);
+		driver.findElements(By.id("com.myorder.app:id/txtDeliveryMethod")).get(0).click();
+		Thread.sleep(5000);
+		driver.findElements(By.id("com.myorder.app:id/txtDelivery")).get(1).click();
+		Thread.sleep(2000);
 		driver.findElements(By.id("com.myorder.app:id/btnAddToCart")).get(0).click();
 		Thread.sleep(2000);
 		driver.findElements(By.id("com.myorder.app:id/fulFillmentExtraInfo")).get(0).sendKeys("12");
 		Thread.sleep(2000);
-//		driver.sendKeyEvent(4);
+		driver.sendKeyEvent(4);
 //		driver.findElement(By.id("com.myorder.app:id/minitix_layout")).click();
 //		Thread.sleep(5000);
 //		driver.scrollTo("iDEAL");
@@ -121,18 +127,15 @@ public class Checkout_FoodDrinks{
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Issuer Simulation V3 - ING']")).click();
 		Thread.sleep(2000);
 		driver.findElements(By.id("com.myorder.app:id/fill_wallet")).get(0).click();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		
-		Set<String> contextNames = driver.getContextHandles();
-		for (String contextName : contextNames) {
-		    System.out.println(contextNames); //prints out something like NATIVE_APP \n WEBVIEW_1
-		}
+		driver.tap(1, 50, 318, 1);
+		Thread.sleep(10000);
+//		driver.getContext();
+//		WebElement div = driver.findElement(By.xpath(".//*[@id='data']/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/form/table/tbody/tr[3]/td[1]/input"));
+//		div.click();
 		
-		driver.getContext();
-		WebElement div = driver.findElement(By.xpath(".//*[@id='data']/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/form/table/tbody/tr[3]/td[1]/input"));
-		div.click();
-		
-		driver.findElement(By.id("android:id/button1")).click();
+//		driver.findElement(By.id("android:id/button1")).click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("android:id/button3")));
 		driver.findElement(By.id("android:id/button3")).click();
 		Thread.sleep(2000);

@@ -30,6 +30,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import android.R;
+import android.widget.TimePicker;
+
 import com.test.QtestConnect.Connect;
  
 public class Checkout_Parking {
@@ -94,7 +97,9 @@ public class Checkout_Parking {
 //						driver.scrollTo("09");
 			//			Thread.sleep(2000);
 			//			driver.findElements(By.id("android:id/numberpicker_input")).get(1).sendKeys("11");
-			Thread.sleep(2000);
+			
+				        
+						Thread.sleep(2000);
 			driver.findElements(By.id("com.myorder.app:id/txtdone")).get(0).click();
 			Thread.sleep(5000);
 			driver.findElements(By.id("com.myorder.app:id/btnParking")).get(0).click();
