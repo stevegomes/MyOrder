@@ -21,7 +21,7 @@ public class Login {
 	public AndroidDriver driver;
 	
 @Test
-  public void loginTest(AndroidDriver driver) throws InterruptedException {
+  public void loginTest() throws InterruptedException {
 		Connect connect = new Connect();
 		Date startDate = Calendar.getInstance().getTime();
 		Date endDate = null;

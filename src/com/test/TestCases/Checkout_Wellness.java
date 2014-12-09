@@ -40,7 +40,7 @@ public class Checkout_Wellness {
 	}
 
 	@Test
-	public void CheckoutWellness(AndroidDriver driver)  {
+	public void CheckoutWellness()  {
 		Connect connect = new Connect();
 		Date startDate = Calendar.getInstance().getTime();
 		Date endDate = null;
@@ -48,8 +48,8 @@ public class Checkout_Wellness {
 		try{
 		// Scripts Here
 			
-			Login l = new Login();
-			l.loginTest(driver);
+//			Login l = new Login();
+//			l.loginTest(driver);
 			
 			WebDriverWait wait = new WebDriverWait(driver, 30);
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.id("com.myorder.app:id/txt_done")));
