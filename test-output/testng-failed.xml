@@ -3,21 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< Updated upstream
-      <class name="com.test.TestCases.NewTest">
-        <methods>
-          <include name="test"/>
-          <include name="Setup"/>
-        </methods>
-      </class> <!-- com.test.TestCases.NewTest -->
-=======
       <class name="com.test.TestCases.Login">
         <methods>
-          <include name="loginTest"/>
+          <include name="LoginTest"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- com.test.TestCases.Login -->
->>>>>>> Stashed changes
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

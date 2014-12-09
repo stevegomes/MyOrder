@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
 	<classpathentry kind="lib" path="/Users/Preet/Documents/Automation/JARs/java-client-2.1.0-javadoc.jar"/>
 	<classpathentry kind="lib" path="/Users/Preet/Documents/Automation/JARs/java-client-2.1.0-sources.jar"/>
 	<classpathentry kind="lib" path="/Users/Preet/Documents/Automation/JARs/java-client-2.1.0.jar"/>
@@ -50,5 +49,6 @@
 	<classpathentry kind="lib" path="/Users/Preet/Documents/Automation/JARs/selenium-2.44.0/selenium-java-2.44.0.jar"/>
 	<classpathentry kind="lib" path="/Users/Preet/Documents/Automation/JARs/jackson-core-2.2.2.jar"/>
 	<classpathentry kind="lib" path="/Users/Preet/Documents/Automation/JARs/velocity-dep-1.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

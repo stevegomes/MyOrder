@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="com.test.TestCases.Checkout_Wellness">
+        <methods>
+          <include name="Setup"/>
+          <include name="CheckoutWellness"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Wellness -->
+      <class name="com.test.TestCases.Checkout_FoodDrinks">
+        <methods>
+          <include name="CheckoutFoodDrinks"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_FoodDrinks -->
+      <class name="com.test.TestCases.Checkout_Cinema">
+        <methods>
+          <include name="Setup"/>
+          <include name="CheckoutCinema"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Cinema -->
+      <class name="com.test.TestCases.Checkout_Flowershops">
+        <methods>
+          <include name="Setup"/>
+          <include name="CheckoutFlowershop"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Flowershops -->
+      <class name="com.test.TestCases.ChargeWallet_iDEAL">
+        <methods>
+          <include name="Setup"/>
+          <include name="ChargeWalletiDeal"/>
+        </methods>
+      </class> <!-- com.test.TestCases.ChargeWallet_iDEAL -->
+      <class name="com.test.TestCases.Checkout_Offers">
+        <methods>
+          <include name="CheckoutOffers"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Offers -->
+      <class name="com.test.TestCases.Checkout_Gifts">
+        <methods>
+          <include name="CheckoutGifts"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Gifts -->
+      <class name="com.test.TestCases.Checkout_Carwash">
+        <methods>
+          <include name="Setup"/>
+          <include name="CheckoutCarwash"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Carwash -->
+      <class name="com.test.TestCases.ChargeWallet_DirectDebit">
+        <methods>
+          <include name="Setup"/>
+          <include name="ChargeWalletDirectDebit"/>
+        </methods>
+      </class> <!-- com.test.TestCases.ChargeWallet_DirectDebit -->
+      <class name="com.test.TestCases.Checkout_Catering">
+        <methods>
+          <include name="CheckoutCatering"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Catering -->
+      <class name="com.test.TestCases.Checkout_Miscellaneous">
+        <methods>
+          <include name="CheckoutMisc"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Miscellaneous -->
+      <class name="com.test.TestCases.Login">
+        <methods>
+          <include name="LoginTest"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Login -->
+      <class name="com.test.TestCases.Checkout_Thuisafgehaald">
+        <methods>
+          <include name="Setup"/>
+          <include name="CheckoutThuisafgehaald"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Thuisafgehaald -->
+      <class name="com.test.TestCases.Checkout_Tankstations">
+        <methods>
+          <include name="CheckoutTankstations"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Tankstations -->
+      <class name="com.test.TestCases.Checkout_Thuisbegorgd">
+        <methods>
+          <include name="CheckoutThuisbegorgd"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Thuisbegorgd -->
+      <class name="com.test.TestCases.Checkout_Themeparks">
+        <methods>
+          <include name="Setup"/>
+          <include name="CheckoutThemeparks"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Themeparks -->
+      <class name="com.test.TestCases.PayYourFriends">
+        <methods>
+          <include name="Setup"/>
+          <include name="WalletPayYouFriends"/>
+        </methods>
+      </class> <!-- com.test.TestCases.PayYourFriends -->
+      <class name="com.test.TestCases.MoneyWithdraw">
+        <methods>
+          <include name="Setup"/>
+          <include name="WalletMoneyWithdraw"/>
+        </methods>
+      </class> <!-- com.test.TestCases.MoneyWithdraw -->
+      <class name="com.test.TestCases.ChargeWallet_ChargeCard">
+        <methods>
+          <include name="Setup"/>
+          <include name="ChargeWalletChargeCard"/>
+        </methods>
+      </class> <!-- com.test.TestCases.ChargeWallet_ChargeCard -->
+      <class name="com.test.TestCases.Checkout_Parking">
+        <methods>
+          <include name="Setup"/>
+          <include name="CheckoutParking"/>
+        </methods>
+      </class> <!-- com.test.TestCases.Checkout_Parking -->
+      <class name="com.test.TestCases.ChargeWallet_CC">
+        <methods>
+          <include name="Setup"/>
+          <include name="ChargeWalletCC"/>
+        </methods>
+      </class> <!-- com.test.TestCases.ChargeWallet_CC -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

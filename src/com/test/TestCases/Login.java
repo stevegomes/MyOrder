@@ -2,6 +2,8 @@ package com.test.TestCases;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
 import java.io.File;
@@ -14,11 +16,12 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
+
 import com.test.QtestConnect.Connect;
 
 public class Login {
   
-	public AndroidDriver driver;
+	public AppiumDriver driver;
 	
 
 	@Test
