@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< Updated upstream
   <suite name="Default suite" duration-ms="96945" started-at="2014-12-08T14:02:44Z" finished-at="2014-12-08T14:04:20Z">
     <groups>
     </groups>
@@ -93,6 +94,26 @@ Caused by: java.net.ConnectException: Connection refused: connect
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.test.TestCases.NewTest -->
+=======
+  <suite name="Default suite" duration-ms="45524" started-at="2014-12-08T08:45:17Z" finished-at="2014-12-08T08:46:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="45524" started-at="2014-12-08T08:45:17Z" finished-at="2014-12-08T08:46:02Z">
+      <class name="com.test.TestCases.Login">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.test.TestCases.Login@1f950198]" name="Setup" is-config="true" duration-ms="31973" started-at="2014-12-08T14:15:17Z" finished-at="2014-12-08T14:15:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.test.TestCases.Login@1f950198]" name="loginTest" duration-ms="12542" started-at="2014-12-08T14:15:49Z" finished-at="2014-12-08T14:16:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.TestCases.Login@1f950198]" name="tearDown" is-config="true" duration-ms="997" started-at="2014-12-08T14:16:01Z" finished-at="2014-12-08T14:16:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.TestCases.Login -->
+>>>>>>> Stashed changes
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -75,7 +75,7 @@ public class Checkout_Parking {
 			driver.findElements(By.id("com.myorder.app:id/txt_startTime")).get(0).click();
 						Thread.sleep(2000);
 //						driver.findElementByAccessibilityId("hour").sendKeys("12");
-						driver.findElements(By.id("android:id/numberpicker_input")).get(0).sendKeys("11");
+//						driver.findElements(By.id("android:id/numberpicker_input")).get(0).sendKeys("11");
 //						driver.scrollTo("09");
 			//			Thread.sleep(2000);
 			//			driver.findElements(By.id("android:id/numberpicker_input")).get(1).sendKeys("11");

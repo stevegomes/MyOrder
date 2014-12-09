@@ -2,6 +2,10 @@ package com.test.TestCases;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 import io.appium.java_client.android.AndroidDriver;
 
 import java.io.File;
@@ -20,8 +24,13 @@ public class Login {
   
 	public AndroidDriver driver;
 	
+<<<<<<< Updated upstream
 @Test
   public void loginTest() throws InterruptedException {
+=======
+	@Test
+  public void LoginTest() throws InterruptedException {
+>>>>>>> Stashed changes
 		Connect connect = new Connect();
 		Date startDate = Calendar.getInstance().getTime();
 		Date endDate = null;
@@ -74,7 +83,11 @@ public class Login {
 		capabilities.setCapability("app", app.getAbsolutePath());
 		capabilities.setCapability("app-package", "com.myorder.app");
 		capabilities.setCapability("app-activity", ".rootActivity");
+<<<<<<< Updated upstream
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4473/wd/hub/"),capabilities);
+=======
+		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub/"),capabilities);
+>>>>>>> Stashed changes
 	}
 
 @AfterMethod
