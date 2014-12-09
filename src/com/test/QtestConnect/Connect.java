@@ -56,8 +56,8 @@ public class Connect {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss+00:00");
 		sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
 		Qtest qTest = new Qtest();
-       // qTest.setname("TC-Add a Comment to Event");
-        //qTest.setautomation_content(errorLogs);
+        qTest.setname("");
+        qTest.setautomation_content(errorLogs);
         qTest.setStatus(status);
         qTest.setNote(errorLogs);
 		qTest.setexe_start_date(sdf.format(startDate.getTime()));

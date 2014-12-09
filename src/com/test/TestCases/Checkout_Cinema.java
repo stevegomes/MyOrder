@@ -7,26 +7,24 @@ package com.test.TestCases;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import io.appium.java_client.android.AndroidDriver;
+
 import java.io.File;
 import java.net.URL;
 import java.util.Calendar;
 import java.util.Date;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
 import com.test.QtestConnect.Connect;
 
 public class Checkout_Cinema {
 
-	public WebDriver driver;
+	public AndroidDriver driver;
 
 	@BeforeMethod
 	public void Setup() throws Exception {
@@ -39,11 +37,11 @@ public class Checkout_Cinema {
 		capabilities.setCapability("app", app.getAbsolutePath());
 		capabilities.setCapability("app-package", "com.myorder.app");
 		capabilities.setCapability("app-activity", ".rootActivity");
-		driver = new RemoteWebDriver(new URL("http://127.0.0.1:4473/wd/hub/"),capabilities);
+		driver = new AndroidDriver(new URL("http://127.0.0.1:4473/wd/hub/"),capabilities);
 	}
 
 	@Test
-	public void checkoutTest() throws InterruptedException {
+	public void CheckoutCinema() throws InterruptedException {
 		Connect connect = new Connect();
 		Date startDate = Calendar.getInstance().getTime();
 		Date endDate = null;
@@ -55,7 +53,7 @@ public class Checkout_Cinema {
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.id("com.myorder.app:id/txt_done")));
 			driver.findElements(By.id("com.myorder.app:id/txt_done")).get(0).click();
 			Thread.sleep(5000);
-			connect.scrollData(driver, 0.0, 700.0, 500.0, 700.0);
+			driver.swipe( 1, 1000, 250, 1000, 0);
 			Thread.sleep(2000);
 			driver.findElements(By.id("com.myorder.app:id/txtUserName")).get(0).click();
 			driver.findElements(By.id("com.myorder.app:id/phone_number")).get(0).sendKeys("0649226464");
@@ -79,7 +77,7 @@ public class Checkout_Cinema {
 		driver.findElement(By.id("android:id/button3")).click();
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Tickets']")).click();
 		Thread.sleep(2000);
-		connect.scrollData(driver, 0.0, 700.0, 500.0, 700.0);
+		driver.swipe( 1, 1000, 250, 1000, 0);
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Home']")).click();
 		

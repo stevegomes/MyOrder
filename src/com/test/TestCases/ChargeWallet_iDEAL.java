@@ -4,38 +4,24 @@
 
 package com.test.TestCases;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import java.io.File;
 import java.net.URL;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Set;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.TextView.OnEditorActionListener;
-import android.widget.Toast;
-
 import com.test.QtestConnect.Connect;
 
 
 public class ChargeWallet_iDEAL{
 
-	private AppiumDriver driver;
-//	private AndroidDriver driver2;
+	private AndroidDriver driver;
 	
 	@BeforeMethod
 	public void Setup() throws Exception {
@@ -53,7 +39,7 @@ public class ChargeWallet_iDEAL{
 	}
 
 	@Test
-	public void ChargeWall() throws InterruptedException {
+	public void ChargeWalletiDeal() throws InterruptedException {
 		Connect connect = new Connect();
 		Date startDate = Calendar.getInstance().getTime();
 		Date endDate = null;
@@ -66,7 +52,7 @@ public class ChargeWallet_iDEAL{
 			driver.findElements(By.id("com.myorder.app:id/txt_done")).get(0).click();
 			Thread.sleep(5000);
 //			driver.swipe(0, 700, 500, 700, 1);
-			driver.findElement(By.id("android:id/home")).click();
+			driver.swipe( 1, 1000, 250, 1000, 0);
 //			connect.scrollData(driver, 0.0, 700.0, 500.0, 700.0);
 			Thread.sleep(2000);
 			driver.findElements(By.id("com.myorder.app:id/txtUserName")).get(0).click();
@@ -78,7 +64,7 @@ public class ChargeWallet_iDEAL{
 			Thread.sleep(2000);
 			driver.findElement(By.id("android:id/button1")).click();
 			Thread.sleep(10000);
-			driver.findElement(By.id("android:id/home")).click();
+			driver.swipe( 1, 1000, 250, 1000, 0);
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.id("com.myorder.app:id/txtCashWallet")));
 			driver.findElement(By.id("com.myorder.app:id/txtCashWallet")).click();
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.id("com.myorder.app:id/payment_provider_view")));

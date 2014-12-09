@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.TestCases.Checkout_Parking">
+      <class name="com.test.TestCases.NewTest">
         <methods>
-          <include name="checkoutTest"/>
+          <include name="test"/>
           <include name="Setup"/>
         </methods>
-      </class> <!-- com.test.TestCases.Checkout_Parking -->
+      </class> <!-- com.test.TestCases.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
